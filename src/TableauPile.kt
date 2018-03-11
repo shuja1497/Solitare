@@ -1,10 +1,12 @@
 /**
  * Created by shuja1497 on 3/12/18.
  */
-class TableauPile(var cards: MutableList<Card>){
+class TableauPile(var cards: MutableList<Card> = mutableListOf()){
     // while initializing the tableau pile the last card must be face up
     init {
-        cards.last().faceUp = true
+        // there must be a card
+        if (cards.size > 0)
+            cards.last().faceUp = true
     }
 
     fun addCards(newCards: MutableList<Card>): Boolean{
@@ -24,6 +26,19 @@ class TableauPile(var cards: MutableList<Card>){
             return true
         }
         return false
+    }
+
+    fun removeCards(tappedIndex: Int){
+        // we need to remove card from the card list from tapped index to the end
+        // for (i in 1..7)
+        // for (i in 7 downTo 1 )
+        for (i in tappedIndex..cards.lastIndex){
+            cards.removeAt(i)
+        }
+        // make sure that the last card in tableau pile is face up, provided that there is a last card in our pile
+        if (cards.size > 0){
+            cards.last().faceUp = true
+        }
     }
 
     private fun checkSuits(c1: Card, c2: Card): Boolean {
