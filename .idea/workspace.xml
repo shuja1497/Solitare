@@ -4,6 +4,8 @@
     <list default="true" id="4bc6ba1e-2e5e-4c4b-84fb-d49c39009b14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes" afterPath="$PROJECT_DIR$/notes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Card.kt" afterPath="$PROJECT_DIR$/src/Card.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Deck.kt" afterPath="$PROJECT_DIR$/src/Deck.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameModel.kt" afterPath="$PROJECT_DIR$/src/GameModel.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,13 +19,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Card.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Card.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Card.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="336">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
-                <element signature="n#!!doc;n#Card#0" expanded="false" />
+                <element signature="n#!!doc;n#clubs#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -42,18 +44,18 @@
       <file leaf-file-name="Deck.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Deck.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="352">
+              <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameModel.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameModel.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="63" lean-forward="false" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+            <state relative-caret-position="112">
+              <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -62,8 +64,8 @@
       <file leaf-file-name="notes" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -106,12 +108,12 @@
         <option value="$USER_HOME$/.IdeaIC2017.1/idea64.vmoptions" />
         <option value="$PROJECT_DIR$/src/Card.java" />
         <option value="$PROJECT_DIR$/src/JavaCard.java" />
-        <option value="$PROJECT_DIR$/src/Card.kt" />
         <option value="$PROJECT_DIR$/src/Deck_Old.kt" />
-        <option value="$PROJECT_DIR$/src/Deck.kt" />
-        <option value="$PROJECT_DIR$/notes" />
         <option value="$PROJECT_DIR$/src/FoundationPile.kt" />
+        <option value="$PROJECT_DIR$/notes" />
+        <option value="$PROJECT_DIR$/src/Card.kt" />
         <option value="$PROJECT_DIR$/src/GameModel.kt" />
+        <option value="$PROJECT_DIR$/src/Deck.kt" />
       </list>
     </option>
   </component>
@@ -467,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520790404848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="creating the foundation pile">
+      <created>1520791508102</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1520791508102</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -535,7 +544,8 @@
     <MESSAGE value="removing the data types" />
     <MESSAGE value="using the deck" />
     <MESSAGE value="created game model" />
-    <option name="LAST_COMMIT_MESSAGE" value="created game model" />
+    <MESSAGE value="creating the foundation pile" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating the foundation pile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -619,16 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Card.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc;n#Card#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Deck_Old.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -637,18 +637,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Deck.kt">
+    <entry file="file://$PROJECT_DIR$/notes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="480">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes">
+    <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="7" column="71" lean-forward="false" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -661,11 +661,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameModel.kt">
+    <entry file="file://$PROJECT_DIR$/src/Deck.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="63" lean-forward="false" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        <state relative-caret-position="352">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Card.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc;n#clubs#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

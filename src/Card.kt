@@ -17,7 +17,12 @@
 
 // Type 2>>>
 // if we add val and var then they will act as a property
-class Card (val value: Int, val suit: String, var faceUp: Boolean=false)
+val clubs = "Clubs"
+val diamonds = "Diamonds"
+val hearts = "Hearts"
+val spades = "Spades"
+class Card (val value: Int, val suit: String, var faceUp: Boolean=false){
+}
 
 // init block can be created which will be called as soon as the
 // constructor is called. >>> (for initialization purpose )
