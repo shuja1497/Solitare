@@ -29,3 +29,5 @@ a class can have only one companion object.
 
 ************** in kotlin whenever we put a variable or a function outside the class then it can be used anywhere
 in the package or the app **********************
+
+>> empty tableau pile will only accept king as the first card
