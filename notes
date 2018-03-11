@@ -1,0 +1,20 @@
+
+objects needed for the game >>>
+1. card.
+2. deck.
+3. waste pile.
+4. foundation pile ( where we must make the final sets ).
+5. tableau pile (where the game will go on ).
+6. object that will handle the game itself. >> setting up the game and handling any actions. (dealer) >> Model Layer
+
+Layers >>
+> View (interface with one func to update the view )
+> Presenter (Act as a middle man between model and view layer.)
+> Model ()
+
+Presenter >> whenever we take an action on a view by clicking on a tableau , a method will be called on the
+presenter layer. This method will update the model and after doing that it will  update the view to reflect any changes
+made to the model.
+
+Waste Pile >> * add , * remove , * shuffle(remove all the cards)
+
