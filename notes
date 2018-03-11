@@ -18,3 +18,8 @@ made to the model.
 
 Waste Pile >> * add , * remove , * shuffle(remove all the cards)
 
+Foundation Pile >>
+* each foundation pile needs to correspond to a specific suit.
+* they must follow the series from ace to the king (0 to 12)
+* Actions >>> add , remove , reset.
+
