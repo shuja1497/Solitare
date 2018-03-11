@@ -31,3 +31,9 @@ a class can have only one companion object.
 in the package or the app **********************
 
 >> empty tableau pile will only accept king as the first card
+
+Tests >>>
+1. arrange the objects we need
+2. Act on those objects
+3. Asserting that we got the right result
+
