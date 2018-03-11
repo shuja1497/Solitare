@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4bc6ba1e-2e5e-4c4b-84fb-d49c39009b14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notes" afterPath="$PROJECT_DIR$/notes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Card.kt" afterPath="$PROJECT_DIR$/src/Card.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Deck.kt" afterPath="$PROJECT_DIR$/src/Deck.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameModel.kt" afterPath="$PROJECT_DIR$/src/GameModel.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,14 +16,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Card.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Card.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Card.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="320">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc;n#clubs#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableauPile.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TableauPile.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,9 +118,10 @@
         <option value="$PROJECT_DIR$/src/Deck_Old.kt" />
         <option value="$PROJECT_DIR$/src/FoundationPile.kt" />
         <option value="$PROJECT_DIR$/notes" />
-        <option value="$PROJECT_DIR$/src/Card.kt" />
         <option value="$PROJECT_DIR$/src/GameModel.kt" />
         <option value="$PROJECT_DIR$/src/Deck.kt" />
+        <option value="$PROJECT_DIR$/src/TableauPile.kt" />
+        <option value="$PROJECT_DIR$/src/Card.kt" />
       </list>
     </option>
   </component>
@@ -476,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520791508102</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding suit properties as package-level properties">
+      <created>1520792829519</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1520792829519</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -545,7 +560,8 @@
     <MESSAGE value="using the deck" />
     <MESSAGE value="created game model" />
     <MESSAGE value="creating the foundation pile" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating the foundation pile" />
+    <MESSAGE value="adding suit properties as package-level properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding suit properties as package-level properties" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -671,11 +687,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Card.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="320">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc;n#clubs#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TableauPile.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
