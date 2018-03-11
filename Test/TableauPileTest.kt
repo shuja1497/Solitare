@@ -21,6 +21,17 @@ class TableauPileTest {
 
     @Test
     fun removeCards() {
+        // arrange
+        val tableauPile = TableauPile(mutableListOf(Card(4,clubs),
+                Card(3, diamonds), Card(2, spades)))
+
+        // act
+        tableauPile.removeCards(1) // will remove cards from index 1 to end of cardsList (i.e. 2)
+
+        // assert
+        assertEquals(mutableListOf(Card(4, clubs, true)), tableauPile.cards)// only 4 of clubs will be left
+        // the cards should have equal values but they are not same cards . they are still different objects
+        // for checking properties like these use "data" before class keyword
     }
 
 }

@@ -33,7 +33,7 @@ class TableauPile(var cards: MutableList<Card> = mutableListOf()){
         // for (i in 1..7)
         // for (i in 7 downTo 1 )
         for (i in tappedIndex..cards.lastIndex){
-            cards.removeAt(i)
+            cards.removeAt(tappedIndex)
         }
         // make sure that the last card in tableau pile is face up, provided that there is a last card in our pile
         if (cards.size > 0){

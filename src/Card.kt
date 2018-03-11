@@ -24,8 +24,8 @@ val spades = "Spades"
 
 val redSuits = arrayOf(diamonds, hearts)
 val blackSuits = arrayOf(clubs, spades)
-
-class Card (val value: Int, val suit: String, var faceUp: Boolean=false){
+// if class is just for holding a data it can be written as a data class
+data class Card (val value: Int, val suit: String, var faceUp: Boolean=false){
 }
 
 // init block can be created which will be called as soon as the
