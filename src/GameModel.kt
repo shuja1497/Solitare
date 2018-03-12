@@ -53,6 +53,32 @@ class GameModel {
         }
     }
 
+    fun onTableauPileTap(tableauIndex: Int, cardIndex: Int){
+        val tableauPile = tableauPiles[tableauIndex]
+        if (tableauPile.cards.size>0){
+            val cards = tableauPile.cards.subList(cardIndex, tableauPile.cards.lastIndex+1)
+            if (playCardsOnTableau(cards)){
+                tableauPile.removeCards(cardIndex)
+            }
+        }
+
+    }
+
+    private fun playCardsOnTableau(cards: MutableList<Card>): Boolean {
+        // moving only single card
+        if (cards.size == 1){
+            return playCard(cards.first())
+        }// moving multiple cards
+        else{
+            tableauPiles.forEach {
+                if (it.addCards(cards)){
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
     private fun playCard(card: Card): Boolean {
         foundationPiles.forEach {
             if (it.addCard(card)){ // it represents a foundation Pile
