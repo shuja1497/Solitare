@@ -54,3 +54,5 @@ Tests >>>
 
 >>> For making singleton
 *** replace class with object .
+
+>>>> s.padEnd(2) > ensures that s must be of length 2 ,if not then will add a space.
