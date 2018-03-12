@@ -65,7 +65,6 @@ object GameModel {
                 tableauPile.removeCards(cardIndex)
             }
         }
-
     }
 
     private fun playCardsOnTableau(cards: MutableList<Card>): Boolean {

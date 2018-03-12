@@ -3,5 +3,5 @@
  */
 interface GameView {
     // any class that implements this interface will be notified when the model updates
-    fun update(model: GameModel)
+    fun update(model: GameModel = GameModel)
 }
