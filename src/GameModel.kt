@@ -5,13 +5,13 @@
 class GameModel {
     val deck = Deck()
     val wastePile:MutableList<Card> = mutableListOf()
-    val foundationPile = arrayOf(FoundationPile(clubs), FoundationPile(diamonds),
+    val foundationPiles = arrayOf(FoundationPile(clubs), FoundationPile(diamonds),
             FoundationPile(hearts), FoundationPile(spades))
     val tableauPiles = Array(7, { TableauPile()})
 
     fun resetGame(){
         wastePile.clear()
-        foundationPile.forEach { it.reset() }
+        foundationPiles.forEach { it.reset() }
         deck.reset() // reset the deck to have all 52 cards and shuffle them.
         // setting up the tableau pile >> 1st pile contains 1, 2nd pile contains 2 .............. 7th pile contains 7
 
@@ -32,5 +32,38 @@ class GameModel {
             deck.cardsInDeck = wastePile.toMutableList()
             wastePile.clear()
         }
+    }
+
+    fun onWastePileTap(){
+        if (wastePile.size>0){
+            val card = wastePile.last() // top card in the waste pile
+            if (playCard(card)){
+                wastePile.remove(card)
+            }
+        }
+    }
+
+    fun onfoundationPileTap(foundationIndex: Int){
+        val foundationPile = foundationPiles[foundationIndex]
+        if (foundationPile.cards.size>0){
+            val card = foundationPile.cards.last() // top card in the waste pile
+            if (playCard(card)){
+                foundationPile.removeCards(card)
+            }
+        }
+    }
+
+    private fun playCard(card: Card): Boolean {
+        foundationPiles.forEach {
+            if (it.addCard(card)){ // it represents a foundation Pile
+                return true
+            }
+        }
+        tableauPiles.forEach {
+            if (it.addCards(mutableListOf(card))){
+                return true
+            }
+        }
+        return false
     }
 }
