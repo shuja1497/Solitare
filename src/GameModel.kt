@@ -2,7 +2,11 @@
  * Created by shuja1497 on 3/11/18.
  */
 // we need to create properties for each of our game objects.
-class GameModel {
+// there is only one game of solitare . we will model only one game at a time . so we can declare this game model as
+// a singleton . replace class with object
+// now instance of taking its instance to different classes we can access it directly .
+
+object GameModel {
     val deck = Deck()
     val wastePile:MutableList<Card> = mutableListOf()
     val foundationPiles = arrayOf(FoundationPile(clubs), FoundationPile(diamonds),

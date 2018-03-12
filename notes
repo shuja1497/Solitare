@@ -51,3 +51,6 @@ Tests >>>
 4. tap a tabloP to send a card or cards to a foundP or to another tabloP
 
 >>when tapped on the waste Pile : either the card is playable and we play the card ot it's not playable and we leave it.
+
+>>> For making singleton
+*** replace class with object .
