@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.operations.Bool
-
 /**
  * Created by shuja1497 on 3/11/18.
  */
@@ -9,20 +7,18 @@ class GameModel {
     val wastePile:MutableList<Card> = mutableListOf()
     val foundationPile = arrayOf(FoundationPile(clubs), FoundationPile(diamonds),
             FoundationPile(hearts), FoundationPile(spades))
-    val tableauPile = Array(7, { TableauPile()})
+    val tableauPiles = Array(7, { TableauPile()})
 
     fun resetGame(){
         wastePile.clear()
-//        for (pile in foundationPile){
-//            pile.reset()
-//        }
-        // above for loop can also be written as
         foundationPile.forEach { it.reset() }
+        deck.reset() // reset the deck to have all 52 cards and shuffle them.
+        // setting up the tableau pile >> 1st pile contains 1, 2nd pile contains 2 .............. 7th pile contains 7
+
+        // forEachIndexed takes both index and what is in that index .. two parameters therefore "it" cannot be used
+        tableauPiles.forEachIndexed { index, tableauPile ->
+            val cardsInPile: MutableList<Card> = Array(index+1, { deck.drawCard()}).toMutableList()
+            tableauPiles[index] = TableauPile(cardsInPile)
+        }
     }
-}
-
-
-// extension func >>  name of the func after the name of the class
-fun String.islongerThan5(): Boolean{
-    return this.length>5
 }
