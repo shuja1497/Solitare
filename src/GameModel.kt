@@ -1,3 +1,5 @@
+import com.sun.org.apache.xpath.internal.operations.Bool
+
 /**
  * Created by shuja1497 on 3/11/18.
  */
@@ -8,4 +10,19 @@ class GameModel {
     val foundationPile = arrayOf(FoundationPile(clubs), FoundationPile(diamonds),
             FoundationPile(hearts), FoundationPile(spades))
     val tableauPile = Array(7, { TableauPile()})
+
+    fun resetGame(){
+        wastePile.clear()
+//        for (pile in foundationPile){
+//            pile.reset()
+//        }
+        // above for loop can also be written as
+        foundationPile.forEach { it.reset() }
+    }
+}
+
+
+// extension func >>  name of the func after the name of the class
+fun String.islongerThan5(): Boolean{
+    return this.length>5
 }

@@ -37,3 +37,9 @@ Tests >>>
 2. Act on those objects
 3. Asserting that we got the right result
 
+>>>>>> Starting the game
+> empty waste pile
+> empty foundation pile
+> shuffle the deck and deal the card in 7 new tableau piles
+
+***** extension function >> adding any function to existing classes ******
