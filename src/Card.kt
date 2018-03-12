@@ -30,8 +30,15 @@ val cardMap = mapOf(0 to "A", 1 to "2", 2 to "3" , 3 to "4", 4 to "5", 5 to "6",
 
 // if class is just for holding a data it can be written as a data class
 data class Card (val value: Int, val suit: String, var faceUp: Boolean=false){
-    override fun toString(): String {
-        return "${cardMap[value]} $suit $faceUp"
+    override fun toString(): String = if (faceUp) "${cardMap[value]} ${getSuitChar(suit)} $faceUp" else "XXX"
+
+    // suits is included in Unicode
+    private fun getSuitChar(suit: String): String = when(suit){
+        diamonds -> "\u2666"
+        clubs -> "\u2663"
+        hearts -> "\u2665"
+        spades -> "\u2660"
+        else -> "incorrect suit"
     }
 }
 
