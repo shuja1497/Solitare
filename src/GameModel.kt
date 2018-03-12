@@ -21,4 +21,16 @@ class GameModel {
             tableauPiles[index] = TableauPile(cardsInPile)
         }
     }
+
+    fun onDeckTap(){
+        if (deck.cardsInDeck.size>0) {
+            val card = deck.drawCard()
+            card.faceUp = true
+            wastePile.add(card)
+        }else{
+            // if deck is empty copy all the cards from the waste pile into the deck
+            deck.cardsInDeck = wastePile.toMutableList()
+            wastePile.clear()
+        }
+    }
 }

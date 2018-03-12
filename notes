@@ -43,3 +43,9 @@ Tests >>>
 > shuffle the deck and deal the card in 7 new tableau piles
 
 ***** extension function >> adding any function to existing classes ******
+
+>>>>> Actions player will take -
+1. tap the deck to flip the card in the waste pile
+2. tap the waste pile to in attempt to play a card
+3. tap a foundP to send a card down  to tabloP
+4. tap a tabloP to send a card or cards to a foundP or to another tabloP
