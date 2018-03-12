@@ -97,6 +97,27 @@ object GameModel {
     }
 
     fun debugPrint(){
-        println(deck.cardsInDeck.last())// top card in the deck
+//        println(deck.cardsInDeck.last())// top card in the deck
+        //printing the first line .. first thing is top waste pile card
+        var firstLine = if (wastePile.size>0) "${wastePile.last()}" else "___"
+
+        // adding padding before the start of foundation Pile(starts on the 4th cell) .. 3*6 = 18 char
+        firstLine = firstLine.padEnd(18)
+
+        //adding foundPile ..
+        foundationPiles.forEach {
+            firstLine += if (it.cards.size>0) "${it.cards.last()}" else "___"
+            firstLine += "   "
+        }
+        println(firstLine)
+        println()
+        for (i in 0..12){
+            var row = ""
+            tableauPiles.forEach {
+                row += if (it.cards.size>i) "${it.cards[i]}" else "   "
+                row += "   "
+            }
+            println(row)
+        }
     }
 }
